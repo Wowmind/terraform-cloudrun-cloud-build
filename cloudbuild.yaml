@@ -15,6 +15,6 @@ substitutions:
   
 
 - name: gcr.io/cloud-builders/docker
-  args: ['build', '-t', '${gcr.io/terra-run-build/github.com/wowmind/terra-run-build:$SHORT_SHA}', '.']
+  args: ['build', '-t', '${gcr.io/terra-run-build/github.com/wowmind/terraform-cloudrun-cloud-build:$COMMIT_SHA}', '.']
 - name: gcr.io/cloud-builders/docker
-  args: ['push', '${gcr.io/terra-run-build/github.com/wowmind/terra-run-build:$SHORT_SHA}]
+  args: ['push', '${gcr.io/terra-run-build/github.com/wowmind/terraform-cloudrun-cloud-build:$COMMIT_SHA}]
