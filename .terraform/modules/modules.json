@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"kms","Source":"registry.terraform.io/terraform-google-modules/kms/google","Version":"2.2.3","Dir":".terraform/modules/kms"}]}

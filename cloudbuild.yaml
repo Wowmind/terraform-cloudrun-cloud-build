@@ -1,0 +1,13 @@
+
+steps:
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', '${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_RESPOSITORY}/${_IMAGE}', '.']
+
+images:
+- '${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_RESPOSITORY}/${_IMAGE}'
+
+substitutions:
+  _LOCATION: "us-central1"
+  _RESPOSITORY: "terra-run"
+  _IMAGE: "terrarun"
+  _PROJECT_ID: "terra-run-build"
